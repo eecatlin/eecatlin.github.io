@@ -6,7 +6,7 @@ body {
 }
 
 a {
-    color: yellowgreen;
+    color: #0099FF;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -14,7 +14,7 @@ a {
 
 a:hover,
 a:focus {
-    color: forestgreen;
+    color: #0099FF;
 }
 
 p {
@@ -96,7 +96,7 @@ header .header-content .header-content-inner p {
 
 .intro {
 	color: #fff;
-    background-color: yellowgreen;
+    background-color: #0099FF;
     padding: 70px 0;
     text-align: center;
 }
@@ -107,7 +107,7 @@ header .header-content .header-content-inner p {
 
 .content-2 {
 	color: #fff;
-    background-color: #222;
+    background-color: #0099FF;
 }
 
 .content-3 {
