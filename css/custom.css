@@ -14,7 +14,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #66CCFF;
+    color: #66CFFF;
 }
 
 p {
@@ -27,8 +27,10 @@ header {
     width: 100%;
     min-height: auto;
     text-align: center;
-    color: #000;
+    /*color: #000;*/
     background-image: url('../images/writing_sample.jpg');
+    /*border: 100% solid rgba(255,255,255,.9);*/
+    
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -80,8 +82,8 @@ header .header-content .header-content-inner p {
 	header .header-content .header-content-inner h1 {
     	font-size: 100px;
         border-radius: 55px;
-        color: #fff;
-        background-color: #2E2E2E;
+        color: #000;
+        /*background-color: #2E2E2E;*/
 		}
 
     header .header-content .header-content-inner p {
@@ -90,8 +92,8 @@ header .header-content .header-content-inner p {
         max-width: 80%;
         font-size: 18px;
         border-radius: 35px;
-        color: #fff;
-        background-color: #2E2E2E;
+        color: #000;
+        /*background-color: #2E2E2E;*/
     }
 }
 
@@ -140,7 +142,7 @@ header .header-content .header-content-inner p {
 
 .promo-item:hover {
     background-size: 110%; 
-    border: 10px solid rgba(255,255,255,0.3);
+    /*border: 10px solid rgba(255,255,255,0.3);*/
     line-height: 160px;
 }
 
@@ -357,9 +359,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #66FFFF;
+    border-color: #66CCCF;
     color: #fff;
-    background-color: #66FFFF;
+    background-color: #66CCCF;
 }
 
 .btn-primary:active,
