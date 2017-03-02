@@ -140,13 +140,23 @@ header .header-content .header-content-inner p {
     text-align: center;
 }
 
+.promo-item2 {
+    height: 350px;
+    line-height: 300px;
+    text-align: center;
+}
+
+.promo-item2:hover {
+    border: 10px solid rgba(255,255,255,1);
+}
+
 .promo-item:hover {
     background-size: 110%; 
     /*border: 10px solid rgba(255,255,255,0.3);*/
     line-height: 160px;
 }
 
-.promo-item h3 {
+.promo-item, .promo-item2 h3 {
     font-size: 40px;
     display: inline-block;
     vertical-align: middle;
@@ -435,4 +445,23 @@ img::-moz-selection {
 
 .bg-primary {
     background-color: #66CCFF;
+}
+
+div.image-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.image-gallery {
+    transition: opacity .4s ease-in-out;
+  display: inline-block;
+  column-break-inside: avoid;
+  padding-bottom: 15px;
+}
+
+#gallery {
+    column-width: 320px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
 }
