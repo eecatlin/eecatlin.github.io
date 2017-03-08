@@ -27,10 +27,7 @@ header {
     width: 100%;
     min-height: auto;
     text-align: center;
-    /*color: #000;*/
     background-image: url('../images/writing_sample.jpg');
-    /*border: 100% solid rgba(255,255,255,.9);*/
-    
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -83,7 +80,6 @@ header .header-content .header-content-inner p {
     	font-size: 100px;
         border-radius: 55px;
         color: #000;
-        /*background-color: #2E2E2E;*/
 		}
 
     header .header-content .header-content-inner p {
@@ -93,7 +89,6 @@ header .header-content .header-content-inner p {
         font-size: 18px;
         border-radius: 35px;
         color: #000;
-        /*background-color: #2E2E2E;*/
     }
 }
 
@@ -152,7 +147,6 @@ header .header-content .header-content-inner p {
 
 .promo-item:hover {
     background-size: 110%; 
-    /*border: 10px solid rgba(255,255,255,0.3);*/
     line-height: 160px;
 }
 
@@ -180,32 +174,12 @@ header .header-content .header-content-inner p {
 	background-size: cover;
 	background-position: 50% 50%;
 	}
-
-.page-footer {
-	text-align: center;
-	}
-
-.page-footer .contact {
-	padding: 100px 0;
-	background-color: #66CCFF;
-	color: #fff;
-	}
-
-.page-footer .contact p {
-	font-size: 22px;
-	font-weight: 300;
-	}
 	
-.content-3 .glyphicon,	
-.page-footer .contact .glyphicon {
+.content-3 .glyphicon {
 	font-size: 32px;
 	font-weight: 700;
 	}
-		
-.page-footer .small-print {
-	padding: 50px 0 40px;
-	font-weight: 300;
-	}
+	
 
 .text-light {
     color: rgba(255,255,255,.7);
