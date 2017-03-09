@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Emma Catlin</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="../css/custom.css" rel="stylesheet">   
+</head>
+
+<body>
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">
+                	EMMA CATLIN
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="bio.html">Bio</a>
+                    </li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="projects">
+							<li><a href="https://github.com/eecatlin" target="_blank">Coding</a></li>
+							<li><a href="barcelonawriting.html">Writing</a></li>
+							<li><a href="barcelona.html">Intersection</a></li>
+						</ul>
+					</li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <section class="content">
+        <div class="container">
+            <div class="text-box">
+                <p id="terminal-window"></p>
+                <btn id="viewPiece" style="margin:10px;" onclick="runDebugMe();" class="btn btn-primary btn-lg pull-right">View Piece</btn>
+            </div>
+            <btn onClick="$('html, body').animate({scrollTop: $('#info-text').offset().top}, 500);" style="float:right;" class="btn btn-primary btn-lg pull-right">More info down here!<img style="max-height:50px" src="../images/down-arrow2.png"/></btn>
+        </div>
+    </section> 
+
+    <section class="intro" id="info-text">
+        <div class="container">
+            <div class="row" style="text-align:left">
+                <div class="col-sm-6">
+                    <h2 class="section-header">Debugme</h2>
+                    <p class="lead text-light">This is an abridged version of the piece 'Debugme'. Originally, it was meant to be viewed as a Python script through a CLI (Command line interface) but has been translated to javascript to be viewed online. <br><br>Debugme is a piece with a story-like essence, read as a running python script. It evokes the feeling of parsing through endless loglines, while taking advantage of its generative qualities to create a more or less unique experience for each reader.</p>
+                </div> 
+                <div class="col-sm-6">
+                    <p class="lead text-light"> Loglines are lines of output that long running computer programs produce in order to provide the maintainers of the code with a sort of roadmap of the history of the program. They are typically of the form: <br>
+
+                    <pre>&emsp;< Timestamp > [Port number/ array id/ id] Message/ Error message</pre><br><br>Debugme draws out emotion from the emotionless to humanize the experience, and develop a narrative. It turns the reader into a detective, but risks despair as both the main character and the reader are pulled down into the depths of the loglines, searching for a bug.</p>
+                    <a href="https://github.com/eecatlin/debugme" class="btn btn-default btn-lg" target="_blank">View original python script</a>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="../js/jquery.easing.min.js"></script>
+    <!-- Custom Javascript -->
+    <script src="../js/custom.js"></script>
+
+</body>
+</html>
