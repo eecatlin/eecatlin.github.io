@@ -428,9 +428,25 @@ div.image-gallery img {
 
 .image-gallery {
     transition: opacity .4s ease-in-out;
-  display: inline-block;
-  column-break-inside: avoid;
-  padding-bottom: 15px;
+    display: inline-block;
+    column-break-inside: avoid;
+    padding-bottom: 15px;
+    position:relative;
+    padding: 5px;
+}
+
+.image-gallery .description {
+    display:none;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255,255,255, .7);
+    width: 100%;
+    text-align: center;
+}
+
+.image-gallery:hover .description {
+    opacity: 1;
+    display: inline;
 }
 
 #gallery {
