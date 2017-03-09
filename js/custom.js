@@ -225,7 +225,6 @@ function runDebugMe() {
 	var age = Math.floor(Math.random()*4)+ 18;
 	var name = "28xFA78A8C";
 	var timeDelay = tellTheStory(11000, name, age);
-	alert(timeDelay);
 	timeDelay = printClosingRemarks(name, timeDelay);
 	setTimeout(function(){$('#viewPiece').fadeTo(1, 1);}, timeDelay);
 }
