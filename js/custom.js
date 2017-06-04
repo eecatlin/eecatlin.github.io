@@ -4,6 +4,8 @@ $('#siteNav').affix({
 		top: 100
 	}
 })
+
+//Barcelona writing translation function
 function displayTranslation() {
 	if ($('.english-version').css('display') =='none') {
 		$('.english-version').show();
@@ -16,6 +18,7 @@ function displayTranslation() {
 	}
 }
 
+//Debugme piece
 function printToTerminal(text, delay) {
 	setTimeout(function(){$('#terminal-window').append(text)}, delay);
 }
@@ -227,4 +230,35 @@ function runDebugMe() {
 	var timeDelay = tellTheStory(11000, name, age);
 	timeDelay = printClosingRemarks(name, timeDelay);
 	setTimeout(function(){$('#viewPiece').fadeTo(1, 1);}, timeDelay);
+}
+
+//Scribbles
+function runScribbles() {
+	$('#viewScribbles').fadeTo(.5, 0);
+
+	setTimeout(function(){$('#terminal-window').text("Clouds like smoke descending towards the earth.\n")}, 1000);
+
+	printEmpty(2000, 50);
+	//Dreams are weird little nymphs running around in my head. How have you not seen them?
+	//Breath life onto the page.
+	//Dreams are pigments of our imagination
+	//The ramblings of a lost soul.
+	//I am a contageon
+	//Dreamy eyes sticky with the heat
+	//Smoke trails from a cigarette
+	//Pigeons come to peck at my feet
+	//Sometimes I worry I have crossed some unsanctioned boundary into the unknown.
+	//The notion of elsewhere
+	//The hair on your upper lip.
+	//Continuously stumbling.
+	//Yes, of course.
+	//Still searching for some type of "other"
+	//Whispers of ideas passing smokily through my mind
+	//The inability to write
+	//Una ciudad abandonada
+
+	var timeDelay = 5000;
+	// var timeDelay = tellTheStory(11000, name, age);
+	// timeDelay = printClosingRemarks(name, timeDelay);
+	setTimeout(function(){$('#viewScribbles').fadeTo(1, 1);}, timeDelay);
 }

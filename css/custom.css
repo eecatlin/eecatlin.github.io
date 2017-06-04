@@ -389,6 +389,7 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-lg {
     padding: 15px 30px;
+    margin: 10px;
 }
 
 ::-moz-selection {
@@ -480,7 +481,7 @@ div.image-gallery img {
     margin:0;
 }
 
-.text-box #viewPiece {
+.text-box #viewPiece, #viewScribbles {
     position: absolute;
     left: 50%;
     top: 50%;
