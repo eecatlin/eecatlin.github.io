@@ -132,8 +132,12 @@ header .header-content .header-content-inner p {
 .promo-item {
     height: 200px;
     line-height: 180px;
-    text-align: center;
-    width: 32%;
+}
+
+@media (max-width: 991px) {
+    .promo-item {
+        width: 32%;
+    }
 }
 
 .promo-item2 {
