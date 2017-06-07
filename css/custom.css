@@ -133,6 +133,7 @@ header .header-content .header-content-inner p {
     height: 200px;
     line-height: 180px;
     text-align: center;
+    width: 32%; /* quick fix */
 }
 
 .promo-item2 {
@@ -469,9 +470,10 @@ div.image-gallery img {
     overflow: hidden;
 }
 
-.text-box #terminal-window {
+.text-box #terminal-window{
     position: absolute;
     bottom: 0;
+    width: 100%;
 }
 
 .text-box #terminal-window pre {
