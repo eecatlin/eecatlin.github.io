@@ -232,13 +232,92 @@ function runDebugMe() {
 	setTimeout(function(){$('#viewPiece').fadeTo(1, 1);}, timeDelay);
 }
 
-//Scribbles
+/// Scribbles ///
+
+function clouds() {
+	var para = document.createElement("p");
+	var node = document.createTextNode("clouds");
+	para.appendChild(node);
+	para.style = "position:absolute; opacity: 0;";
+	para.style.left = Math.random()*1000 + 'px';
+	para.style.top = Math.random()*200 + 'px';
+
+	var element = document.getElementById("scribbles");
+	element.appendChild(para);
+	$(para).fadeTo(1, .5);
+	var pos = 0;
+    var id = setInterval(frame, 1);
+    var left = Math.random() < .5 ? 1 : -1;
+    function frame() {
+        if (pos == 100) {
+            clearInterval(id);
+            $(para).fadeTo(2,0);
+        } else {
+            pos++; 
+            para.style.top = pos + $(para).position().top + 'px'; 
+            para.style.left = left*pos + $(para).position().left + 'px'; 
+        }
+    }
+}
+
+
 function runScribbles() {
 	$('#viewScribbles').fadeTo(.5, 0);
 
-	setTimeout(function(){$('#terminal-window').text("Clouds like smoke descending towards the earth.\n")}, 1000);
+	var para = document.createElement("p");
+	var node = document.createTextNode("Clouds like smoke descending towards the earth.");
+	para.appendChild(node);
+	para.style = "position:absolute; left: 250px; opacity: 0";
 
-	printEmpty(2000, 50);
+	var element = document.getElementById("scribbles");
+	element.appendChild(para);
+	$(para).fadeTo(2, 1);
+
+
+    var pos = 0;
+    var id = setInterval(frame, 15);
+    function frame() {
+        if (pos == 400) {
+            $(para).fadeTo(300,0);
+        } else if (pos > 600) {
+        	clearInterval(id);
+        	take2();
+        } else {
+        	if (pos > 200 && pos < 300) {
+        		clouds();
+        	}
+            para.style.top = pos + 'px'; 
+        }
+        pos++; 
+    }
+
+    function take2() {
+	    para = document.createElement("p");
+		node = document.createTextNode("Dreams are weird little nymphs running around in my head. How have you not seen them?");
+		para.appendChild(node);
+		para.style = "position:absolute; left: 100px; top: 200px; opacity:0;";
+
+		element.appendChild(para);
+		$(para).fadeTo(100, 1);
+
+	    pos = 200;
+	    id = setInterval(frame2, 15);
+	    function frame2() {
+	        if (pos == 500) {
+	            clearInterval(id);
+	            $(para).fadeTo(1,0);
+	        } else {
+	            pos++; 
+	            var neg = Math.random() < .9 ? 1 : -1;
+	            para.style.top = neg*pos + 'px'; 
+	            var neg2 = Math.random() < .5 ? 1 : -1;
+	            para.style.left = $(para).position().left + neg2 + 'px'; 
+	        }
+	    }
+
+	}
+	
+	// printEmpty(2000, 50);
 	//Dreams are weird little nymphs running around in my head. How have you not seen them?
 	//Breath life onto the page.
 	//Dreams are pigments of our imagination
@@ -257,7 +336,7 @@ function runScribbles() {
 	//The inability to write
 	//Una ciudad abandonada
 
-	var timeDelay = 5000;
+	var timeDelay = 100000;
 	// var timeDelay = tellTheStory(11000, name, age);
 	// timeDelay = printClosingRemarks(name, timeDelay);
 	setTimeout(function(){$('#viewScribbles').fadeTo(1, 1);}, timeDelay);
