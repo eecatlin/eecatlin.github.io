@@ -45,9 +45,6 @@ function toggleConcrete() {
 	current_keepcalm = rand;
 }
 
-setInterval(toggleConcrete, 2000);
-setInterval(toggleTranslation, 7000);
-
 //Debugme piece
 function printToTerminal(text, delay) {
 	setTimeout(function(){$('#terminal-window').append(text)}, delay);
