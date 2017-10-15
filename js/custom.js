@@ -18,6 +18,36 @@ function displayTranslation() {
 	}
 }
 
+//Translation timer
+function toggleTranslation() {
+	if ($('#spanish-version').css('display') =='block') {
+		$('#english-version').fadeIn(5000);
+		$('#spanish-version').fadeOut(5000);
+	} else if ($('#english-version').css('display') =='block') {
+		$('#middle-version-1').fadeIn(5000);
+		$('#english-version').fadeOut(5000);
+	} else if ($('#middle-version-1').css('display') =='block') {
+		$('#middle-version-2').fadeIn(5000);
+		$('#middle-version-1').fadeOut(5000);
+	} else {
+		$('#spanish-version').fadeIn(5000);
+		$('#middle-version-2').fadeOut(5000);
+	}
+}
+
+var current_keepcalm = 1;
+
+//Concrete poem toggler
+function toggleConcrete() {
+	var rand = Math.floor(Math.random()*12+1);
+	$('#'+String(current_keepcalm)).fadeOut(1000);
+	$('#'+String(rand)).fadeIn(1000);
+	current_keepcalm = rand;
+}
+
+setInterval(toggleConcrete, 2000);
+setInterval(toggleTranslation, 7000);
+
 //Debugme piece
 function printToTerminal(text, delay) {
 	setTimeout(function(){$('#terminal-window').append(text)}, delay);
