@@ -63,6 +63,15 @@
     <script src="../js/custom.js"></script>
 
     <script>
+    var current_keepcalm = 1;
+
+    //Concrete poem toggler
+    function toggleConcrete() {
+        var rand = Math.floor(Math.random()*12+1);
+        $('#'+String(current_keepcalm)).fadeOut(1000);
+        $('#'+String(rand)).fadeIn(1000);
+        current_keepcalm = rand;
+    }
     setInterval(toggleConcrete, 2000);
     </script>
 

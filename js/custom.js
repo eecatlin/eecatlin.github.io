@@ -35,16 +35,6 @@ function toggleTranslation() {
 	}
 }
 
-var current_keepcalm = 1;
-
-//Concrete poem toggler
-function toggleConcrete() {
-	var rand = Math.floor(Math.random()*12+1);
-	$('#'+String(current_keepcalm)).fadeOut(1000);
-	$('#'+String(rand)).fadeIn(1000);
-	current_keepcalm = rand;
-}
-
 //Debugme piece
 function printToTerminal(text, delay) {
 	setTimeout(function(){$('#terminal-window').append(text)}, delay);
