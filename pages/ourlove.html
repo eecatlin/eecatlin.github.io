@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Emma Catlin</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">   
+</head>
+
+<body>
+    <section class="intro" style="width: 100%; height: 100%">
+        <div class="container" id="english-version" style="position:absolute">
+            <h3>Our love</h3>
+            <p>Good morning, lovie. <br>
+                Missing you <br>
+                Missing you too. <br>
+                How are you? <br>
+                Ok. Working. Dying. <br>
+                I'm going to work too. Why? Are you sleepy? <br>
+                Yeah I'm really tired. <br>
+                Aw, lovie <br>
+                <br><br>
+                ...
+                <br><br>
+                I love you. <br>
+                I love you too <br>
+                Are you going to work? <br>
+                I'll leave you to it <br>
+                See you tomorrow <br>
+                Ok. Bye <br>
+                Bye <br>
+                Goodnight <br>
+            </p>
+
+        </div>
+        <div class="container" id="middle-version-1" style="position:absolute; display:none;">
+            <h3>Our amor</h3>
+            <p>Good morning, mi amor. <br>
+                Missing you <br>
+                Missing you so much mi amor. <br>
+                ¿Cómo estás? <br>
+                Ok. Trabajando. Dying. <br>
+                I'm going to work too. ¿Porque? Are you sleepy? <br>
+                Yeah tengo mucho sueño. <br>
+                Ay, lovie <br>
+                <br><br>
+                ...
+                <br><br>
+                I love you. <br>
+                y yo a ti hermosa <br>
+                Are you going to work? <br>
+                Te dejo en paz <br>
+                Nos vemos tomorrow <br>
+                Pues. Bye <br>
+                Bye <br>
+                Buenas noches <br>
+            </p>
+
+        </div>
+        <div class="container" id="middle-version-2" style="position:absolute; display:none;">
+            <h3>Nuestro love</h3>
+            <p>Buenos días, lovie. <br>
+                Extrañándote <br>
+                Missing you so much mi amor. <br>
+                How are you? <br>
+                Ok. Working. Muriéndome. <br>
+                Voy al trabajo también. Why? ¿Estás cansado? <br>
+                Pues sí. I'm really tired. <br>
+                Aw, mi amor <br>
+                <br><br>
+                ...
+                <br><br>
+                Te amo. <br>
+                I love you too <br>
+                ¿Vas a trabajar? <br>
+                Pues, I'll leave you to it <br>
+                Nos vemos mañana <br>
+                Ok. Bye <br>
+                Adios <br>
+                Goodnight <br>
+                </p>
+
+        </div>
+        <div class="container" id="spanish-version" style="position:absolute; display:none;">
+            <h3>Nuestro amor</h3>
+            <p>Buenos días, mi amor. <br>
+                Extrañándote <br>
+                y yo a ti mi amor. <br>
+                ¿Cómo estás? <br>
+                Bien. Trabajando. Muriéndome. <br>
+                Voy al trabajo también. ¿Porque? ¿Estás cansado? <br>
+                Sí tengo mucho sueño. <br>
+                Ay, mi amor <br>
+                <br><br>
+                ...
+                <br><br>
+                Te amo. <br>
+                y yo a ti <br>
+                ¿Vas a trabajar? <br>
+                Te dejo en paz <br>
+                Nos vemos mañana <br>
+                Pues. Adios <br>
+                Adios <br>
+                Buenas noches <br>
+                </p>
+
+        </div>            
+    </section>
+
+<!-- jQuery -->
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="../js/jquery.easing.min.js"></script>
+    <!-- Custom Javascript -->
+    <script src="../js/custom.js"></script>
+
+    <script>
+    //Translation timer
+    function toggleTranslation() {
+        if ($('#spanish-version').css('display') =='block') {
+            $('#english-version').fadeIn(5000);
+            $('#spanish-version').fadeOut(5000);
+        } else if ($('#english-version').css('display') =='block') {
+            $('#middle-version-1').fadeIn(5000);
+            $('#english-version').fadeOut(5000);
+        } else if ($('#middle-version-1').css('display') =='block') {
+            $('#middle-version-2').fadeIn(5000);
+            $('#middle-version-1').fadeOut(5000);
+        } else {
+            $('#spanish-version').fadeIn(5000);
+            $('#middle-version-2').fadeOut(5000);
+        }
+    }
+    setInterval(toggleTranslation, 7000);
+    </script>
+
+</body>
+</html>
