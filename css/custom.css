@@ -397,6 +397,16 @@ fieldset[disabled] .btn-primary.active {
     margin: 10px;
 }
 
+.btn-black {
+    float:right; 
+    border: 3px solid transparent;
+    margin: 1px;
+}
+
+.btn-black:hover{
+    border: 3px solid black;
+}
+
 ::-moz-selection {
     text-shadow: none;
     color: #fff;
