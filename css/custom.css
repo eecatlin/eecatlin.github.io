@@ -6,7 +6,7 @@ body {
 }
 
 a {
-    color: #66CCFF;
+    color: #6A959D; /*66CCFF*/
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -14,7 +14,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #66CFFF;
+    color: #0F454F;
 }
 
 p {
@@ -99,7 +99,7 @@ header .header-content .header-content-inner p {
 
 .intro {
 	color: #fff;
-    background-color: #66CCFF;
+    background-color: #6A959D;
     padding: 70px 0;
     text-align: center;
 }
@@ -110,7 +110,7 @@ header .header-content .header-content-inner p {
 
 .content-2 {
 	color: #fff;
-    background-color: #66CCFF;
+    background-color: #6A959D;
 }
 
 .content-3 {
@@ -199,27 +199,27 @@ header .header-content .header-content-inner p {
 }
 
 .navbar-default .navbar-header .navbar-brand {
-    color: #66CCFF;
+    color: #6A959D;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #66CCCF;
+    color: #437983;
 }
 
 .navbar-default .nav > li>a,
 .navbar-default .nav>li>a:focus {
-    color: #66CCCF;
+    color: #437983;
 }
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #66CCCF;
+    color: #437983;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #66CCFF!important;
+    color: #6A959D!important;
     background-color: transparent;
 }
 
@@ -240,7 +240,7 @@ header .header-content .header-content-inner p {
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: #66CCCF;
+        color: #437983;
     }
 
     .navbar-default .nav > li>a,
@@ -250,7 +250,7 @@ header .header-content .header-content-inner p {
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #66CCCF;
+        color: #437983;
     }
 
     .navbar-default.affix {
@@ -261,7 +261,7 @@ header .header-content .header-content-inner p {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         letter-spacing: 0;
-        color: #66CCFF;
+        color: #6A959D;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -276,7 +276,7 @@ header .header-content .header-content-inner p {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #66CCCF;
+        color: #437983;
     }
 }
 
@@ -334,9 +334,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #66CCFF;
+    border-color: #6A959D;
     color: #fff;
-    background-color: #66CCFF;
+    background-color: #6A959D;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -348,9 +348,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #66CCCF;
+    border-color: #437983;
     color: #fff;
-    background-color: #66CCCF;
+    background-color: #437983;
 }
 
 .btn-primary:active,
@@ -377,18 +377,18 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #66CCFF;
-    background-color: #66CCFF;
+    border-color: #6A959D;
+    background-color: #6A959D;
 }
 
 .btn-primary .badge {
-    color: #66CCFF;
+    color: #6A959D;
     background-color: #fff;
 }
 
 
 .btn {
-    border-radius: 300px;
+    border-radius: 10px;
     text-transform: uppercase;
 }
 
@@ -430,11 +430,11 @@ img::-moz-selection {
 }
 
 .text-primary {
-    color: #66CCFF;
+    color: #6A959D;
 }
 
 .bg-primary {
-    background-color: #66CCFF;
+    background-color: #6A959D;
 }
 
 div.image-gallery img {
