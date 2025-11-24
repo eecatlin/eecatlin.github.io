@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Emma Catlin</title>
+    <title>Emma Chavez</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/custom.css" rel="stylesheet">   
+    <link href="../css/custom.css" rel="stylesheet">
 </head>
 
 <body>
@@ -134,14 +134,12 @@
         </div> 
     </section>
 
-<!-- jQuery -->
-    <script src="../js/jquery-1.11.3.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="../js/jquery.easing.min.js"></script>
-    <!-- Custom Javascript -->
-    <script src="../js/custom.js"></script>
+    <!-- Component Loader - must load before scripts component -->
+    <script src="../js/components.js"></script>
+    <!-- Scripts component will be loaded here -->
+    <div data-component="scripts"></div>
+    <!-- Footer component will be loaded here -->
+    <div data-component="footer"></div>
 
     <script>
     var current_keepcalm = 1;

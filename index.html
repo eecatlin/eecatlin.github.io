@@ -6,124 +6,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Emma Catlin</title>
+    <title>Emma Chavez</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">   
+    <link href="css/custom.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                	EMMA CATLIN
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="pages/bio.html
-">Bio</a>
-                    </li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
-						<ul class="dropdown-menu" aria-labelledby="projects">
-							<li><a href="https://github.com/eecatlin" target="_blank">Coding</a></li>
-							<li><a href="pages/barcelonawriting.html">Writing</a></li>
-							<li><a href="pages/intersection.html">Intersection</a></li>
-						</ul>
-					</li>
-                </ul>
-                
-            </div>
-        </div>
-    </nav>
+    <!-- Navigation component will be loaded here -->
+    <div data-component="nav"></div>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Writer/Coder</h1>
-                <p>Exploring the intersection of creative writing and coding.</p>
-                <a href="pages/barcelona.html" class="btn btn-primary btn-lg">My projects</a>
-            </div>
-        </div>
-    </header>
-
-    <div class="container-fluid">
-        <div class="row promo" style="text-align: center;">
-            <a href="pages/barcelonawriting.html">
-                <div class="col-md-4 promo-item item-1">
-                    <h3>
-                        Write
-                    </h3>
-                </div>
-            </a>
-            <a href="https://github.com/eecatlin" target="_blank">
-                <div class="col-md-4 promo-item item-2">
-                    <h3>
-                        Code
-                    </h3>
-                </div>
-            </a>
-            
-            <a href="pages/barcelona.html">
-                <div class="col-md-4 promo-item item-3">
-                    <h3>
-                        Ponder
-                    </h3>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <section class="content">
+    <section class="intro">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <h2 class="section-header">Writing is my passion</h2>
-                    <p class="text-muted">A love for creating and exploring new fictitious worlds started when I was little. It all began with my parents reading to my younger brother and me while we ate our dinner.</p>
+                    <img class="img-responsive img-circle center-block" src="images/linkedin.jpg" alt="" style="width:200px;">
                 </div>
-                <div class="col-sm-6" style="text-align:right;">
-                    <h2 class="section-header">Coding is my obsession</h2>
-                    <p class="lead text-muted">After the first few lines of code, I was addicted. And I was only programming my TI-84! </p>
-                </div>
+                <div class="col-sm-6">
+                    <h2 class="section-header">The bio of a writer/coder</h2>
+                    <p class="lead text-light">Emma is an engineering leader at early stage startups.
+                        She studied computer science and literary arts at Brown University and is a self-published author.</p>
+                </div> 
             </div>
         </div>
     </section>
 
-     <section class="intro">
+    <section class="content" style="margin-top:-50px">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <img class="img-responsive img-circle center-block" src="images/inspiration.png" alt="" style="width:300px;">
-                    <h2 class="section-header">And I'm constantly searching for the intersection between the two</h2>
-                    <p class="lead text-light">When I tell people that I love writing and coding, I get the drastically different responses of "Wow! Those two must be great together!" or "Interesting... Those are very different." I hope that eventually I'll find the perfect balance between writing and coding, and maybe even where they overlap.</p>
-                    <a href="pages/barcelona.html" class="btn btn-default btn-lg">Explore</a>
-                </div>          
+                <div class="col-sm-6" style="width: 80%">
+                    <h2 class="section-header">Links</h2>
+                    <a href="https://www.linkedin.com/in/emmacatlin" class="btn btn-primary btn-lg" target="_blank">LinkedIn</a>
+                    <a href="https://medium.com/@emma_catlin" class="btn btn-primary btn-lg" target="_blank">Medium</a>
+                    <a href="documents/resume.pdf" download class="btn btn-primary btn-lg">Download résumé</a>
+                    <h2 class="section-header">Contact me</h2>
+                    <a href="mailto:emma_catlin@alumni.brown.edu" target="_top">emma_catlin@alumni.brown.edu</a>
+                    <h2 class="section-header">Read me elsewhere</h2>
+                    <a href="https://medium.com/pinterest-engineering/how-to-review-code-as-a-junior-developer-10ffb7846958" target="_blank">How to Review Code as a Junior Developer
+ - Pinterest Engineering Blog
+                        <img class="img-responsive" src="https://miro.medium.com/max/1400/1*Zv7EAdMWHI76JLbuuLwcEA.jpeg" alt="" style="width:500px;border-radius: 12px;">
+                    </a>
+                    <br>
+                    <a href="https://medium.com/pinterest-engineering/c%C3%B3mo-revisar-c%C3%B3digo-como-desarrollador-junior-fb75362b77c2" target="_blank">Cómo revisar código como desarrollador junior
+ - Pinterest Engineering Blog
+                        <img class="img-responsive" src="https://miro.medium.com/max/1400/1*Zv7EAdMWHI76JLbuuLwcEA.jpeg" alt="" style="width:500px;border-radius: 12px;">
+                    </a>
+                    <br>
+                    <a href="https://www.amazon.com/dp/1987671902" target="_blank">
+                        Two - A bilingual poetry chapbook exploring the relationship between English and Spanish.
+                         <img class="img-responsive" src="images/TwoCover.png" alt="" style="width:500px;border-radius: 12px;">
+                    </a>
+                    <br>
+                    <a href="https://www.amazon.com/reader/1987671902/ref=rdr_sb_li_hist_1&state=01111" class="btn btn-primary" target="_blank">Preview</a>                
+                    <!-- https://www.amazon.com/reader/1987671902/ref=rdr_sb_li_hist_1&state=01111 -->
+                    <!-- <br> -->
+<!--                     <a href="http://barcelonacasa.blogspot.com.es/2017/03/que-haces-este-domingo-si-todas-las.html" target="_blank">http://barcelonacasa.blogspot.com.es/2017/03/que-haces-este-domingo-si-todas-las.html</a>
+                    <br>
+                    <a href="http://barcelonacasa.blogspot.com.es/2017/03/parte-2-que-haces-este-domingo-si-todas.html" target="_blank">http://barcelonacasa.blogspot.com.es/2017/03/parte-2-que-haces-este-domingo-si-todas.html</a>
+                    <br>
+                    <a href="http://barcelonacasa.blogspot.com.es/2017/03/parte-3-que-haces-este-domingo-si-todas.html" target="_blank">http://barcelonacasa.blogspot.com.es/2017/03/parte-3-que-haces-este-domingo-si-todas.html</a><br>
+                    <a href="http://barcelonacasa.blogspot.com.es/2017/03/haz-ejercicio-gratis-o-casi-gratis-en.html" target="_blank">http://barcelonacasa.blogspot.com.es/2017/03/haz-ejercicio-gratis-o-casi-gratis-en.html</a>
+                    <br>
+                    <a href="http://barcelonacasa.blogspot.com.es/2017/04/una-ruta-en-bici-por-la-costa.html " target="_blank">http://barcelonacasa.blogspot.com.es/2017/04/una-ruta-en-bici-por-la-costa.html </a> -->
+                    <h2 class="section-header">Podcasts</h2>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0k6F4Gsv0IFkDpRI3WPE2d?utm_source=generator" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    <br>
+                    <iframe style="border-radius:12px" src="https://www.youtube-nocookie.com/embed/fXot-pWq_eQ?si=Ea8IxwuyyCQBQ6th" title="When to say no to building an AI feature" width="100%" height="232" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>  
+                             
                 
             </div>
         </div>
-    </section>        
+    </section>
 
-    <!-- jQuery -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <!-- Custom Javascript -->
-    <script src="js/custom.js"></script>
+        
+
+    <!-- Component Loader - must load before scripts component -->
+    <script src="js/components.js"></script>
+    <!-- Scripts component will be loaded here -->
+    <div data-component="scripts"></div>
+    <!-- Footer component will be loaded here -->
+    <div data-component="footer"></div>
 
 </body>
 </html>
+
