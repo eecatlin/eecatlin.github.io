@@ -33,7 +33,18 @@
         if (pageName === 'bio') {
             return 'bio';
         }
-        
+        if (pageName === 'ourweddingjournal') {
+            return 'ourweddingjournal';
+        }
+        if (pageName === 'barcelonawriting') {
+            return 'barcelonawriting';
+        }
+        if (pageName === 'intersection') {
+            return 'intersection';
+        }
+        if (pageName === 'streetart') {
+            return 'streetart';
+        }
         return null;
     }
 
@@ -45,10 +56,17 @@
         // Handle active states
         var activeHome = activePage === 'home' ? 'active' : '';
         var activeBio = activePage === 'bio' ? 'active' : '';
+        var activeOurWeddingJournal = activePage === 'ourweddingjournal' ? 'active' : '';
+        var activeBarcelonaWriting = activePage === 'barcelonawriting' ? 'active' : '';
+        var activeIntersection = activePage === 'intersection' ? 'active' : '';
+        var activeStreetArt = activePage === 'streetart' ? 'active' : '';
         
         html = html.replace(/{ACTIVE_HOME}/g, activeHome);
         html = html.replace(/{ACTIVE_BIO}/g, activeBio);
-        
+        html = html.replace(/{ACTIVE_OUR_WEDDING_JOURNAL}/g, activeOurWeddingJournal);
+        html = html.replace(/{ACTIVE_BARCELONA_WRITING}/g, activeBarcelonaWriting);
+        html = html.replace(/{ACTIVE_INTERSECTION}/g, activeIntersection);
+        html = html.replace(/{ACTIVE_STREETART}/g, activeStreetArt);
         return html;
     }
 
